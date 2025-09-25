@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vídeos</title>
+</head>
+<body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <!-- da primeira forma mais simplificada, porém não é todos os navegadores que abrem o mesmo arquivo, o ideal seria colocar outros arquvios compativeis de outra forma -->
+
+     <video src="/midia/2583471-Uhd 3840 2160 24Fps.mp4" width="500" controls></video>
+    <br>
+    <!------------------------------------------------------------------------------------------------------>
+    <!-- Existe essa outra forma de hospedar vídeos, porém, para o cliente irá ter um consumo muito grande, isso pode gerar muito consumo de trafegos de dados, pois dependendo da quantidade de pessoas acessando, o consumo de megas vão irá aumentar.-->
+
+    <video width="500" controls>
+        <source src="/midia/2583471-Uhd 3840 2160 24Fps.mp4" type="video/mp4">
+        <source src="/midia/2583471-Uhd-3840-2160-24Fps.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos</p>
+    </video>
+    <br>
+    <!------------------------------------------------------------------------------------------------------->
+    <!-- Tem essa grande possibilidade, pois não irá consumir os dados dentro do seu site e sim do youtube(ou outra plataforma como vimeo, essa é uma possibilidade, dependendo do que o cliente queira desejar pro conteúdo dentro do site.)-->
+    <h1>Iserindo vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=aHeDsN5lqsytgz2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
