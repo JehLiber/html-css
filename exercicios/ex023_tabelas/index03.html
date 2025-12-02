@@ -12,9 +12,27 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+    caption{
+        font-size:  1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    tbody tr:nth-child(odd){ /*odd ou (2n-1), even(2n)*/
+        background-color: rgb(148, 140, 140);
+    }
+    tbody tr:nth-child(2n){ /*Efeito Zebrado com pseudo-classes (2n) para ser o próximo ser colocado*/
+        background-color: rgb(190, 181, 181);
+    }
+    thead tr th{
+        position: sticky; /*cabeçalho fixo ao rolar a página*/
+        top: -1px;
+        background-color: rgb(35, 35, 35);
     }
     thead, tfoot{
-        background-color: gray;
+        background-color: rgb(35, 35, 35);
         color: white;
     }
     td, th{
@@ -38,10 +56,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +99,7 @@
             <tr>
                 <td>Pará</td>
                 <td class="num">8.602.865</td>
-            </tr> class="num"
+            </tr>
             <tr>
                 <td>Santa Catarina</td>
                 <td class="num">7.164.788</td>
@@ -156,7 +175,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
