@@ -13,6 +13,7 @@
             height: 400px;
             border: 2px solid black;
         }
+        
     </style>
 </head>
 <body>
@@ -27,11 +28,14 @@
     </ul>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit placeat aut est laborum reprehenderit itaque ea enim adipisci quos, nihil odit debitis voluptatem rem? Nemo facere nisi natus praesentium quibusdam.</p>
-<!--para o target da lista com os links funcionar dentro do iframe, precidamos dar um nome("frame") -->
-    <iframe id="tela" name="frame" src="">
+<!--para o target da lista com os links funcionar dentro do iframe, precidamos dar um nome("frame") para funcionar -->
+    <iframe id="tela" name="frame" srcdoc="escolha uma das opções acima "> <!-- você pode colocar imagens tbm, esse srcdoc é uma forma para o iframe nao ficar vazio no início da tela-->
         <p>infelizmente seu navegador nao é compatível com isso</p>
     </iframe>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nihil sequi impedit. Officia, eos quae earum officiis quaerat doloribus? Ipsam explicabo cumque perspiciatis veniam illo similique earum rerum. Accusamus, ipsa.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit odit vitae eaque delectus id facere, dolore ducimus, mollitia, culpa atque nesciunt molestias temporibus accusantium magni ex expedita tenetur nulla?</p>
+    <!--"O uso de imagens locais em um iframe com srcdoc pode ser problemático devido ao contexto isolado criado pelo srcdoc. Quando usar o srcdoc, o conteúdo do iframe é tratado como um documento separado, sem um contexto de URL ou base de recursos. Isso pode fazer com que caminhos relativos para recursos locais, como imagens, não funcionem corretamente."
+
+"Para incluir imagens diretamente em um iframe com srcdoc, uma alternativa recomendada é converter a imagem para uma URL data URI (base64). Elimina a dependência de caminho relativo ou absoluto e permite que a imagem seja embutida diretamente no HTML."-->
 </body>
 </html>

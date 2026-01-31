@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <!--Sandbox
+Imagine que voce tem uma caixa de brinquedos (iframe) dentro do seu quarto (a página web). Os brinquedos na caixa podem ser perigosos, então você coloca uma tampa (sandbox) para protegê-los.
+
+A tampa tem diferentes aberturas que voce pode abrir ou fechar, para decidir o que os brinquedos podem fazer:
+
+- allow-same-origin: Isso é como deixar os brinqudos na caixa acharem que estão no seu quarto. Eles podem brincar com outros brinquedos no quarto.
+- allow-forms: Permite que os brinquedos possam enviar cartas para outros brinquedos.
+- allow-scripts: Permite que os brinquedos possam fazer mágica e truques.
+Sem a tampa, os brinquedos podem fazer o que quiserem, mas com a tampa, você controla o que é permitido.
+
+Referrer Policy
+Pense no cabeçalho HTTP Referer como um bilhete que diz de onde você veio. Quando você visita um amigo (uma nova página), você pode dar o bilhete para ele.
+
+A política de referência (referrerpolicy) é como decidir o que escrever no bilhete:
+
+- no-referrer: Você não dá nenhum bilhete.
+- no-referrer-when-downgrade: Você só dá o bilhete se for para um amigo seguro (HTTPS). Se for um amigo inseguro (HTTP), você não dá.
+- origin: Você só diz de qual cidade você veio, mas não o seu endereço exato.
+- unsafe-url: Você diz o seu endereço exato, mas isso pode não ser seguro.-->
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit minima cum quis, alias laborum adipisci magni excepturi doloribus modi cumque rem dolore iusto ipsam aliquam soluta similique illum consectetur!</p>
+    <iframe src="pagina02.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde tenetur totam ipsa et, cum praesentium fuga ab. Maxime optio ratione ipsam laboriosam beatae eaque alias suscipit sunt! Architecto, ducimus. Tempore!</p>
+</body>
+</html>
