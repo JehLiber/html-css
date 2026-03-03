@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        
+        <h3>Formulário</h3>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label class="cnomes" for="inome">Nome:</label> <br>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label class="cnomes" for="isobrenome">Sobrenome:</label> <br>
+                <input type="text" name="sobrenome" id="isobrenome" required>
+            </p>
+            <fieldset>
+                 <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="isxfem" checked>
+                    <label for="isxfem">Feminino</label>
+                    <input type="radio" name="sexo" id="isxmas">
+                    <label for="isxmas">Masculino</label>
+                </p>
+            </fieldset>
+            <p>
+                <label class="cnomes" for="itel">Telefone:</label> <br>
+                <input type="tel" name="tel" id="itel" placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <label class="cnomes" for="iestado">Estado:</label> <br>
+                <select name="estado" id="iestado">
+                    <optgroup label="Região Sudeste">
+                        <option value="ES">Espirito Santo</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
