@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+body{
+    background-color:cadetblue;
+}
+label.cnomes{
+    font-size: 15px;
+    
+}
+div{
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.348);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.44);
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+form{
+    padding: 20px;
+   
+}
+input, select,fieldset{
+    background-color: rgba(122, 122, 122, 0.118);
+    border-radius: 5px;
+}
+input[type=submit]{
+    width: 80px;
+    font-size: large;
+    padding: 5px;
+    margin: 5px;
+}
+p, br{
+    padding: 10px ;
+
+}
+
+
+fieldset{
+   background-color: rgba(122, 122, 122, 0.118);
+   width: 200px;
+   margin: auto;
+   border: none;
+}

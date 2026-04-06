@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--existem mais tipos de de formatações de formulários, isso depende do que você procura associar-->
+    <h1>Meu primeiro formulário</h1>
+    <!-- dois tipos de método dentro do HTML, GET, POST-->
+     <!-- post = pode até não aparecer na parte da url do site, porém no inspecionar -> network -> headers, você irá encontrar os dados que você digitou, ou seja, isso não significa que seus dados estejam seguros. para protejer, nesse caso, precisa estudar HTTPS e criptografia-->
+    <form  action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete serve para aparecer ou não( on/off ) sugestoões de texto na caixa de texto-->
+        <!-- o 'id' é mais utilizado no JavaScript-->
+        <!-- utilize sempre o label. ele serve para o "Nome:" ser associado a caixa de texto, isso serve até pro navegador entender e ser asssociado de forma certa. principalmente para uso de celulares e identificar .-->
+         
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
