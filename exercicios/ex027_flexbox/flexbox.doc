@@ -1,0 +1,88 @@
+flexbox = caixas flexisiveis 
+
+ele cria um layout felxivel para poder adaptar o conteúdo
+
+ele trabalha com caixas adaptaveis
+
+ex: caixa de fundo = display: flex;
+    caixa de dentro = flex: auto;
+
+mesmo se diminuir a tela de navegação, as caixas de dentro vão de adaptar 
+
+ela pode esticar, diminuir, deslocar caixa para baixo, adptar caixas, trabalhar
+ com as caixas verticalmente também.
+
+*flex-container = elemento pai - display flex só vai na tag contêiner
+
+*flex-items = elementos internos os itens não vão receber a configuração de display flex.
+(exemplo funcionando na pasta flex001)
+---------------------------------------------------------------------------------------------------------
+
+flex-direction
+
+configuração padrão do flex(se por acaso você não colocar nenhuma configuração) = flex-direction: row; (linha. ou seja, horizontal, esquerda para direita)
+
+flex-direction: row-reverse; (direita para esquerda) 
+flex-direction: column; (formato de uma coluna, ou seja vertical, de cima pra baixo)
+flex-direction: column-reverse; (de baixo pra cima)
+
+
+eixos(axis)
+main- axis é o eixo principal (imagine uma caixa e esse eixo passando no meio dela na horizontal)
+da esquerda para direita
+
+ele gera dois pontos inicial(da caixa) e o ponto final(da caixa) 
+main-start e o main-end
+
+cross-axis - eixo transversal  parte verticaL
+dois pontos 
+cross-start começo na parte de cima 
+cross-end final na parte de baixo
+LEMBRETE: CONSIDERANDO O NOSSO IDIOMA, do que a gente está acostumado a ler(modo flex-direction: row;)
+o cross-axis não muda, ele continua de cima para baixo(tanto para flex-direction:row; ou flex-direction: row-reverse;)
+
+
+modo vertical(column)
+flex-direction column; 
+main-axis = de cima para baixo 
+cross-axis = da esquerda para direita.
+
+flex-direction:column-reverse;
+main-axis = de baixo pra cima;
+cross-axis = da esquerda para direita.
+
+--------------------------------------------------------------------------------------------------
+flex-wrap
+por padrão está configurado como nowrap;
+o encolhimento dos itens vai depender da capcidade do conteúdo dentro dele(dos items)
+* se colocar somente um display: flex; ele ja é nowrap;
+
+flex-wrap: wrap; ele vai pegar o ultimo elemento(item) e vai quebrar no sentido transversal dele, ou seja ele vai pra baixo(no sentido do cros-axis)
+
+flex-wrap: wrap-reverse; ele vai quebrar no sentido oposto no sentido transversal.
+ele sempre vai no sentido transversal
+----------------------------------------------------------------------------------------------------------
+flex-flow 
+junção de flex-direction -> flex-wrap (shorthand)
+
+flex-direction: row;
+flexwrap: nowrap;
+
+juntando os dois fica = flex-flow: row nowrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
