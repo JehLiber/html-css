@@ -70,7 +70,30 @@ flexwrap: nowrap;
 
 juntando os dois fica = flex-flow: row nowrap;
 
+-------------------------------------------------------------------------------------------------------
+justify-content
+ele vai fazer o alinhamento em relação ao main-axis(ao eixo principal)
 
+flex-start = ele vai ficar "grudado" no main-start(o espaço em branco vai ficar no final do eixo principal)
+flex-end = ele vai ficar "grudado no main-end ( o espaço em branco vai ficar no começo do eixo principal)
+center = vai calcular o centro do conteiner e vão ficar alinhados. os espaços ao lado deles vão calcular igualmente
+space-between = com espaçamento entre eles igual, primeiro elemento e o ultimo elemento vão estar "grudados" na ponta no conteiner.
+space-evenly = ele não vai "grudar no começo e no ultimo(main-start e main-end), vão ter espaçamentos iguais de todos os itens(exatamente o mesmo espaço entre eles).
+space-around = ele vai pegar o conteiner e vai calcular os espaços entre os itens e vai centralizar os itens dentro desses espaços.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+align-items
+sempre no sentido cross-axis(sentido transversal)
+
+stretch = por padrão ele vai esticar os elementos(items dentro do conteiner)
+flex-start = ele vai "grudar" sempre no eixo cross-start
+flex-end = ele vai "grudar sempre no eixo cross-end
+center = espaço entre start e end
+-------------------------------------------------------------------------------------------------------------------
+centralização
+exemplo com um items dentro conteiner 
+justify-content: center;
+align-items: center;
 
 
 
