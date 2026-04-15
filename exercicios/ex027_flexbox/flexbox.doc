@@ -110,6 +110,20 @@ space-around = ele vai dividir o exio transversal em partes iguais, ele vai colo
 
 observação: justify-content= vai alinhar o conteúdo vai alinhar os itens dentro do eixo principal, o align-items vai alinhar os items dentro do eixo tranvsersal,
 align-content alinha os elementos do eixo transversal mas quando eles estão empacotados
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+order
+todo elemento(item) por padrão é order 0
+você pode mudar a order deles modificando o numeros dos items
+------------------------------------------------------------------------------------
+align-self
+se aplica a cada um dos itens no eixo transversal
+auto = herdar vai pegar o alinhamento do pai
+flex-start perto do cross-start
+flex-end perto do cross-end
+center = alinhar no centro
+stretch = vai esticar
+
 
 
 
