@@ -94,6 +94,22 @@ centralização
 exemplo com um items dentro conteiner 
 justify-content: center;
 align-items: center;
+---------------------------------------------------------------------------------------------------------------------
+Conteúdo empacotado
+flex-flow: row wrap; (eixo principal horaizontal, eixo transversão de cima para baixo)
+
+align-content
+por padrão stretch(esticar)
+flex-start = "grudado" no cross-start, espaço em branco no cross-ends
+flex-end = "grudado no cross-end, espaço em branco no cross-start
+center = vai pegar os elementos vai ficar alinhado no centro do cross-axis.
+space-between = ele vai pegar os primeiros elementos perto do cross-start e outro elementos no cross-end e o espaço no meio fica livre, dependendo da posição ele pode ir no centro
+space-evenly = coloca um espaço entre start e end e alinha no centro(mesma coisa do justify content, porém é pelo eixo transversal)
+space-around = ele vai dividir o exio transversal em partes iguais, ele vai colocar os items dentro das areas demarcadas e vai centralizar os elementos
+
+
+observação: justify-content= vai alinhar o conteúdo vai alinhar os itens dentro do eixo principal, o align-items vai alinhar os items dentro do eixo tranvsersal,
+align-content alinha os elementos do eixo transversal mas quando eles estão empacotados
 
 
 
