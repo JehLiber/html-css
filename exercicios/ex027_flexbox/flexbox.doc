@@ -115,7 +115,7 @@ align-content alinha os elementos do eixo transversal mas quando eles estão emp
 order
 todo elemento(item) por padrão é order 0
 você pode mudar a order deles modificando o numeros dos items
-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 align-self
 se aplica a cada um dos itens no eixo transversal
 auto = herdar vai pegar o alinhamento do pai
@@ -123,6 +123,51 @@ flex-start perto do cross-start
 flex-end perto do cross-end
 center = alinhar no centro
 stretch = vai esticar
+------------------------------------------------------------------------------------------------------------------------------
+flex-basis   (flex-flow: row nowrap;)
+
+auto = (por padrao) ele vai disponilibilizar o tamanho disponível do conteúdo internos
+
+
+---------------------------------------------------------------------------------------------------------------------------
+550px conteiner
+flex-basis: (150px 150px 150px)(cada item)
+
+flex-shrink(diminuir/encolher) = por padrao 1(por padrao, pode encolher)
+flex-grow (aumentar/crescer)= por padrao 0(por padrao, nao pode crescer)
+
+flex-grow: 1 pode crescer
+ou seja por numeração 1 pode encolher e aumentar o tamanho dos itens 
+
+
+-------------------------------------------------------------------------------------------------------------------
+flex-grow = 
+o valor de grow 0,1 ok, porem quando for maior, ele vai crescer proporcionalmente ao o outro valor.
+--------------------------------------------------------------------------------------------------------------------
+flex-shrink =
+a mesma coisa com o shrink sobre valores, quando for maior de 2 o valor irá crescer proporcionalmente.
+-------------------------------------------------------------------------------------------------------------------------------
+shorthand
+
+flex-grow + flex-shrink + flex-basis
+
+flex 0(grow) 1(shrink) 150px(basis)
+flex: 0 1 150px;
+
+flex: 0 1 auto (padrao) 
+flex: initial (padrao) = mesma coisa
+
+flex:  0 0 auto = não flexisiveis
+flex: none = mesma coisa(nenhuma flexibilidade)
+
+flex: 1 1 auto = pode crescer ou diminuir
+flex: auto = mesma coisa 
+
+flex: 3; (somente o grow)
+flex: 3 1 auto = mesma coisa
+
+
+
 
 
 
