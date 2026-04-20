@@ -1,0 +1,13 @@
+propriedades de container do Grid Layout
+
+-> display
+-> grid-template-columns
+-> grid-template-rows
+-> grid-gap
+
+----------------------------------------------------------------------------------------------------------------------
+composto por duas dimensões
+
+grid container:
+display: grid; 
+
