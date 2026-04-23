@@ -3,11 +3,43 @@ propriedades de container do Grid Layout
 -> display
 -> grid-template-columns
 -> grid-template-rows
--> grid-gap
+-> gap
 
+align-items
+justify-items
+align-content
+justify-content
+
+grid-auto-row
+grid-auto-column
+place-items
+place-content
+grid-template
+
+função repeat()
+unidade fraction
+________________________________________________
+propriedades de itens no grid Layout
+
+grid-row-start
+grid-row-end
+grid-column-start
+grid-column-end
+
+span
+grid-row
+grid-column
+grid-area
 ----------------------------------------------------------------------------------------------------------------------
 composto por duas dimensões
 
+-----------------
+Atenção!!!!!!!
 grid container:
 display: grid; 
+---------------
+--------------------------------------------------------------------
+displaygrid
 
+align = vertical
+justify = horizontal
